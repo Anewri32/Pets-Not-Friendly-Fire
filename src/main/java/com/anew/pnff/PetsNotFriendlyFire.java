@@ -16,12 +16,9 @@ public class PetsNotFriendlyFire implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		LOGGER.info("Initializing PetsNotFriendlyFire Mod");
-
 		// Registrar el evento para interceptar ataques de entidad
 		AttackEntityCallback.EVENT.register((player, world, hand, entity, hitResult) -> {
 			if (isFriendlyFire(player, entity)) {
-				LOGGER.info("Prevented friendly fire between pets.");
 				return ActionResult.FAIL; // Cancela el ataque
 			}
 			return ActionResult.PASS; // Permite el ataque si no es fuego amigo
