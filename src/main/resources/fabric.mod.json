@@ -3,7 +3,7 @@
 	"id": "pets-not-friendly-fire",
 	"version": "${version}",
 	"name": "Pets Not Friendly Fire",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "Protect your pets from crossfire.",
 	"authors": [
 		"Me!"
 	],
